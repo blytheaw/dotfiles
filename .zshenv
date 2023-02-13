@@ -7,3 +7,5 @@ export PATH=$PATH:/home/austin/.local/bin:/home/austin/.dotnet
 fpath=(/home/austin/.granted/zsh_autocomplete/assume/ $fpath)
 
 fpath=(/home/austin/.granted/zsh_autocomplete/granted/ $fpath)
+
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
