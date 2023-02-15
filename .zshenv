@@ -11,5 +11,6 @@ fpath=($HOME/.granted/zsh_autocomplete/assume/ $fpath)
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias assume="source assume"
+alias vim="nvim"
 
 source $HOME/.zshsecrets
