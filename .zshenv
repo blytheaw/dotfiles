@@ -1,7 +1,6 @@
-export DOTNET_ROOT=$HOME/.dotnet
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+export EB_EXEC=$HOME/.ebcli-virtual-env/executables
 
-export PATH=$HOME/bin:$PATH:$HOME/.local/bin:$DOTNET_ROOT
+export PATH=$HOME/bin:$PATH:$HOME/.local/bin:$EB_EXEC
 
 export OCTOPUS_CLI_SERVER=https://rightnowmedia.octopus.app
 export GITHUB_OWNER=RightNowMinistries
