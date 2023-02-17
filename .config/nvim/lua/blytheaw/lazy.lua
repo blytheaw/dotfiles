@@ -12,17 +12,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	{ 
+	{
 		'nvim-telescope/telescope.nvim',
-		version = '0.1.1', 
+		version = '0.1.1',
 		dependencies = {
 			{'nvim-lua/plenary.nvim'}
-		} 
+		}
 	},
 	{'Mofiqul/dracula.nvim'},
 	{
 		'nvim-treesitter/nvim-treesitter',
-		build = ':TSUpdate' 
+		build = ':TSUpdate'
 	},
 	{
 		'VonHeikemen/lsp-zero.nvim',
@@ -45,5 +45,6 @@ require("lazy").setup({
 			{'L3MON4D3/LuaSnip'},             -- Required
 			{'rafamadriz/friendly-snippets'}, -- Optional
 		}
-	}
+	},
+	{ 'kdheepak/lazygit.nvim'}
 })
