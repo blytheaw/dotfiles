@@ -55,7 +55,7 @@ require("lazy").setup({
             "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
             "MunifTanjim/nui.nvim",
         },
-        init = function(plugin)
+        init = function()
             vim.g.neo_tree_remove_legacy_commands = 1
         end
     }
