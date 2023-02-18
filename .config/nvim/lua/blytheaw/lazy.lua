@@ -41,10 +41,22 @@ require("lazy").setup({
 			{'saadparwaiz1/cmp_luasnip'}, -- Optional
 			{'hrsh7th/cmp-nvim-lua'},     -- Optional
 
-			-- Snippets
-			{'L3MON4D3/LuaSnip'},             -- Required
-			{'rafamadriz/friendly-snippets'}, -- Optional
-		}
-	},
-	{ 'kdheepak/lazygit.nvim'}
+            -- Snippets
+            {'L3MON4D3/LuaSnip'},             -- Required
+            {'rafamadriz/friendly-snippets'}, -- Optional
+        }
+    },
+    { 'kdheepak/lazygit.nvim'},
+    {
+        "nvim-neo-tree/neo-tree.nvim",
+        version = "v2.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+            "MunifTanjim/nui.nvim",
+        },
+        init = function(plugin)
+            vim.g.neo_tree_remove_legacy_commands = 1
+        end
+    }
 })
